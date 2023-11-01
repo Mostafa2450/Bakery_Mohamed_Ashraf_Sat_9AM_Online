@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+/* Global - START */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Alegreya";
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.bg-beige {
+  background: #f8f8f8 !important;
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.section-spacing {
+  margin-block: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global - END */
+
+/* Variables - START */
+
+:root {
+  --gold: #8e7754;
+}
+
+/* Variables - END */
+
+/* Header - START */
+
+.navbar {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  /* display: none; */
+}
+
+.content {
+  padding-inline: 50px;
+}
+
+.navbar .logo {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.navbar .logo img {
+  width: 180px;
+}
+
+.navbar .nav-menu {
+  float: right;
+  color: white;
+  margin-block: 0;
+}
+
+.nav-menu li {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  height: 100%;
+  display: inline-block;
+  padding: 25px 15px;
+}
+
+.nav-menu li.active {
+  border-top: 3px solid #ae9768;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.nav-menu li:hover a {
+  color: #e0c690;
+}
+
+/* Header - END */
+
+/* [1] Hero Section - START */
+
+.section.hero {
+  height: 100vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  background: url(./images/drew-coffman-1872.jpg) grey no-repeat center center;
+  background-size: cover;
+}
+
+.section.hero * {
+  text-align: center;
+  color: white;
+}
+
+.section.hero h1 {
+  font-size: 54px;
+  margin-block: 10px;
+}
+
+.section.hero .slogan {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.section.hero p {
+  font-size: 24px;
+}
+
+.ctas .btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 15px 25px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.btn.solid-biege {
+  background: var(--gold);
+  border: 2px solid transparent;
+  margin-right: 10px;
+}
+
+.btn.solid-biege:hover {
+  background: white;
+  border: 2px solid transparent;
+  color: #303030;
+}
+
+.btn.outlined-white {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn.outlined-white:hover {
+  background: white;
+  color: #303030;
+}
+
+/* [1] Hero Section - END */
+
+/* [2] Who We Are Section & [3] Our Location - START */
+
+.who-we-are,
+.our-location {
+  background: white;
+  width: 100%;
+}
+
+.who-we-are .col,
+.our-location .col {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 25px;
+}
+
+.who-we-are h2,
+.our-location h2 {
+  color: #303030;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.who-we-are .text p,
+.our-location .text p {
+  color: #686868;
+  line-height: 1.86em;
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.who-we-are .image img,
+.our-location .image img {
+  width: 100%;
+}
+
+ul.points {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.points i {
+  color: var(--gold);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #00000026;
+  margin-right: 10px;
+}
+
+ul.points p {
+  display: inline-block;
+}
+
+/* [2] Who We Are Section & [3] Our Location - END */
+
+/* [4] Our Baking Section - START */
+
+.our-bakery h2 {
+  color: #303030;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.our-bakery .section-heading h2,
+.our-bakery .section-heading p {
+  text-align: center;
+}
+
+.our-bakery .section-heading p {
+  color: #686868;
+  line-height: 1.86em;
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.our-bakery .card-wrapper {
+  width: 100%;
+  display: flow-root;
+}
+
+.our-bakery .card {
+  width: 33%;
+  padding: 25px;
+  background-clip: content-box;
+  float: left;
+}
+
+.our-bakery .card img {
+  width: 100%;
+}
+
+.our-bakery .card h3,
+.our-bakery .card p {
+  text-align: center;
+}
+
+.our-bakery .card h3 {
+  font-size: 22px;
+  color: #303030;
+  line-height: 1.38em;
+  font-weight: 400;
+}
+
+.our-bakery .card p {
+  line-height: 1.86em;
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  font-weight: 400;
+  color: #686868;
+}
+
+/* [4] Our Baking Section - END */
+
+/* [5] Contact Information Section - START */
+
+.contact-information .content {
+  display: flow-root;
+}
+
+.contact-information .col {
+  width: 50%;
+  float: left;
+  padding: 25px;
+}
+
+.contact-information h2 {
+  font-family: "Alegreya";
+  font-size: 32px;
+  color: #303030;
+  line-height: 1.38em;
+  font-weight: 400;
+}
+
+.contact-information p,
+.contact-information li,
+.contact-information h4 {
+  line-height: 1.86em;
+  font-family: "Alegreya Sans";
+  font-size: 17px;
+  font-weight: 400;
+  color: #686868;
+}
+
+.contact-information ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-information li p {
+  margin: 0;
+}
+
+.contact-information li a {
+  color: #686868;
+  text-decoration: none;
+}
+
+.contact-information li a,
+.contact-information li p {
+  display: inline-block;
+}
+
+.contact-information li i {
+  background: var(--gold);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact-information li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* [5] Contact Information Section - END */
+
+/* [6] Footer - START */
+
+.footer .footer-container {
+  background: #403d38;
+  display: flow-root;
+}
+
+.footer .footer-container .col {
+  float: left;
+  width: 25%;
+  padding: 25px;
+}
+
+.footer .footer-container h4 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.footer .footer-container p,
+.footer .footer-container li,
+.footer .footer-container li a {
+  font-family: "Alegreya Sans";
+  color: #969696;
+  font-size: 16px;
+  line-height: 1.86em;
+}
+
+.footer .footer-container li a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer .footer-container li:hover a {
+  color: #e0e0e0;
+}
+
+.footer .footer-container ul {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+.footer .footer-container li {
+  padding-block: 10px;
+}
+
+.footer .footer-container li:before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  padding-right: 8px;
+}
+
+.footer .footer-container li:not(:last-child) {
+  border-bottom: 1px solid #ffffff0d;
+}
+
+.col.with-bg ul::after {
+  position: absolute;
+  content: "";
+  opacity: 0.1;
+  background: url("./images/contact-details-map.png") no-repeat;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.socket {
+  background: #353330;
+}
+
+.socket .content {
+  margin-inline: auto;
+  padding-block: 40px;
+  width: fit-content;
+}
+
+.socket .content p {
+  text-align: center;
+  font-family: "Alegreya Sans";
+  color: #777;
+  font-size: 15px;
+}
+
+.socket .sm-icons {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.socket .sm-icons a:hover:nth-child(1) {
+  background: #3b5998;
+}
+
+.socket .sm-icons a:hover:nth-child(2) {
+  background: #dd4b39;
+}
+
+.socket .sm-icons a:hover:nth-child(3) {
+  background: #007bb5;
+}
+
+.socket .sm-icons a:hover:nth-child(4) {
+  background: #00aced;
+}
+
+.socket .sm-icons a:hover i {
+  color: white;
+}
+
+.socket .sm-icons i {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #8c8a86;
+  transition: all 0.3s;
+}
+
+.socket .sm-icons a {
+  background: #484540;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+/* [6] Footer - END */
